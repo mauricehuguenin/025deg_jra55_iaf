@@ -2,7 +2,7 @@
 Standard configuration for 0.25 degree [ACCESS-OM2](https://github.com/COSIMA/access-om2) experiment (ACCESS-OM2-025) with JRA55-do interannual forcing (IAF).
 
 # Changes to accomodate WMT framework:
-- replace .exe in config.yaml with new .exe files from ryan/master-updated (only mom, not yatm or cice)
+- replace .exe in config.yaml with new .exe files from [ryan/master-updated](https://github.com/rmholmes/MOM5/tree/ryan/master-updated) (only mom, not yatm or cice)
 ```
       exe: /short/public/access-om2/bin/yatm_b6caeab.exe
       exe: /short/e14/mv7494/access-om2/bin/fms_ACCESS-OM_1c1f23e_libaccessom2_b6caeab.x

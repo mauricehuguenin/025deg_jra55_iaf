@@ -8,7 +8,7 @@ exe: /short/public/access-om2/bin/yatm_b6caeab.exe
 exe: /short/e14/mv7494/access-om2/bin/fms_ACCESS-OM_1c1f23e_libaccessom2_b6caeab.x
 exe: /short/public/access-om2/bin/cice_auscom_1440x1080_480p_47650cc_libaccessom2_b6caeab.exe
 ```
-- update ocean/diag_table with WMT diagnostics
+- update ocean/diag_table with WMT diagnostics, i.e. copying diag_table from 025deg_jra55_ryf8485_gmredi6 run
 - update ocean/input.nml to include
 ```
 &ocean_density_nml

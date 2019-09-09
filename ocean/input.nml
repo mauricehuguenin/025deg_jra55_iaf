@@ -124,8 +124,8 @@
       nrho_face_bin = .true.
       potrho_min=1028.0
       potrho_max=1038.0
-      neutralrho_min=34.0
-      neutralrho_max=-3.0
+      neutralrho_min=-3.0
+      neutralrho_max=34.0
       layer_nk=74
       eos_linear=.false.
       eos_preteos10=.true. 

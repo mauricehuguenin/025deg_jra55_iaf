@@ -31,8 +31,8 @@ submodels:
 
 # Collation
 collate:
-  walltime: 1:00:00
-  mem: 30GB
+  walltime: 3:00:00
+  mem: 60GB
   ncpus: 4
   queue: express
   exe: /short/public/access-om2/bin/mppnccombine

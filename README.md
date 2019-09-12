@@ -23,7 +23,7 @@ exe: /short/public/access-om2/bin/cice_auscom_1440x1080_480p_47650cc_libaccessom
      eos_linear=.false.
      eos_preteos10=.true.
 ```
-- activate in ocean/input.nml 
+- activate in ocean/input.nml; these are the diagnostics for neutral diffusion across density surfaces
 ```
 %ocean_mixdownslope_nml
 	use_this_module=.false.

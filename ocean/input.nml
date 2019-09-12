@@ -184,7 +184,7 @@
 /
 
  &ocean_mixdownslope_nml
-	use_this_module=.false.
+	use_this_module=.true.
 /
 
  &ocean_model_nml
@@ -402,7 +402,7 @@
 /
 
  &ocean_sigma_transport_nml
-      use_this_module=.false.
+      use_this_module=.true.
 /
 
  &ocean_sponges_eta_nml

@@ -1,0 +1,47 @@
+nruns: 1 nruns_per_submit: 1 subrun: 1
+Loading input manifest: manifests/input.yaml
+Setting up atmosphere
+Setting up ocean
+Setting up ice
+Setting up access-om2
+Checking exe and input manifests
+Updating full hashes for 3 files in manifests/exe.yaml
+Creating restart manifest
+Updating full hashes for 374 files in manifests/restart.yaml
+1941609.r-man2
+qsub -q express -P e14 -l walltime=10800 -l ncpus=4 -l mem=60GB -N 025_jra55_iaf_c -l wd -j n -v LD_LIBRARY_PATH=/g/data3/hh5/public/apps/miniconda3/envs/analysis3-19.04/lib,PAYU_PATH=/g/data3/hh5/public/apps/miniconda3/envs/analysis3-19.04/bin,PAYU_CURRENT_RUN=26 -W umask=027 -- /g/data3/hh5/public/apps/miniconda3/envs/analysis3-19.04/bin/python /g/data3/hh5/public/apps/miniconda3/envs/analysis3-19.04/bin/payu-collate
+Writing manifests/input.yaml
+Writing manifests/restart.yaml
+Writing manifests/exe.yaml
+git add /home/561/mv7494/access-om2/025deg_jra55_iaf/config.yaml
+git add /home/561/mv7494/access-om2/025deg_jra55_iaf/atmosphere/atm.nml
+git add /home/561/mv7494/access-om2/025deg_jra55_iaf/atmosphere/forcing.json
+git add /home/561/mv7494/access-om2/025deg_jra55_iaf/ocean/data_table
+git add /home/561/mv7494/access-om2/025deg_jra55_iaf/ocean/diag_table
+git add /home/561/mv7494/access-om2/025deg_jra55_iaf/ocean/field_table
+git add /home/561/mv7494/access-om2/025deg_jra55_iaf/ocean/input.nml
+git add /home/561/mv7494/access-om2/025deg_jra55_iaf/ice/cice_in.nml
+git add /home/561/mv7494/access-om2/025deg_jra55_iaf/ice/input_ice.nml
+git add /home/561/mv7494/access-om2/025deg_jra55_iaf/ice/input_ice_gfdl.nml
+git add /home/561/mv7494/access-om2/025deg_jra55_iaf/ice/input_ice_monin.nml
+git add /home/561/mv7494/access-om2/025deg_jra55_iaf/ice/input_ice.nml
+git add /home/561/mv7494/access-om2/025deg_jra55_iaf/accessom2.nml
+git add /home/561/mv7494/access-om2/025deg_jra55_iaf/namcouple
+git add manifests/input.yaml
+git add manifests/restart.yaml
+git add manifests/exe.yaml
+git commit -am "2019-09-11 20:22:00: Run 26"
+mpirun --mca orte_base_help_aggregate 0 -wdir /short/e14/mv7494/access-om2/work/025deg_jra55_iaf/atmosphere -np 1  /short/e14/mv7494/access-om2/work/025deg_jra55_iaf/atmosphere/yatm_b6caeab.exe : -wdir /short/e14/mv7494/access-om2/work/025deg_jra55_iaf/ocean -np 1455  /short/e14/mv7494/access-om2/work/025deg_jra55_iaf/ocean/fms_ACCESS-OM_1c1f23e_libaccessom2_b6caeab.x : -wdir /short/e14/mv7494/access-om2/work/025deg_jra55_iaf/ice -np 361  /short/e14/mv7494/access-om2/work/025deg_jra55_iaf/ice/cice_auscom_1440x1080_480p_47650cc_libaccessom2_b6caeab.exe
+
+======================================================================================
+                  Resource Usage on 2019-09-11 22:48:55:
+   Job Id:             1938385.r-man2
+   Project:            e14
+   Exit Status:        0
+   Service Units:      4468.80
+   NCPUs Requested:    1824                   NCPUs Used: 1824            
+                                           CPU Time Used: 4423:48:02                                 
+   Memory Requested:   3.56TB                Memory Used: 522.0GB         
+   Walltime requested: 05:00:00            Walltime Used: 02:27:00        
+   JobFS requested:    11.13GB                JobFS used: 1.0KB           
+======================================================================================

@@ -18,8 +18,17 @@ exe: /short/public/access-om2/bin/cice_auscom_1440x1080_480p_47650cc_libaccessom
      potrho_min=1028.0
      potrho_max=1038.0
      layer_nk=74
-     neutralrho_min=34.0
-     neutralrho_max=-3.0
+     neutralrho_min=-3.0
+     neutralrho_max=34.0
      eos_linear=.false.
      eos_preteos10=.true.
 ```
+- activate in ocean/input.nml 
+```
+%ocean_mixdownslope_nml
+	use_this_module=.false.
+%ocean_sgima_transport_nml
+	use_this_module=.false.
+```
+
+
